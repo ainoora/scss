@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+    <!-- * ==== <HEADER> ==== -->
+    <header>
+        <div class="head">
+            <a href='#' class="head__logo-text">Project</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-menu__item"><a href='#' class="nav-menu__link">Projects</a></li>
+            <li class="nav-menu__item"><a href='#' class="nav-menu__link nav-menu__link--active">About us</a></li>
+            <li class="nav-menu__item"><a href='#' class="nav-menu__link">Stories</a></li>
+            <li class="nav-menu__item"><a href='#' class="nav-menu__link">Contact</a></li>
+        </ul>
+
+    <!-- * ==== TOGGLE BUTTON ==== -->
+        <div class="head">
+            <img src="assets/Header__menu.svg" alt="toggle button" class="head__toggle-btn">
+        </div>
+    </header>
+
+    <!-- * ==== TOP SECTION ==== -->
+    <main>
+        <section>
+            <div class="top">
+                <img src="assets/top_bg-1.svg" alt="animation" class="top__bg top__bg-1">
+                <img src="assets/top_bg-2.svg" alt="animation" class="top__bg top__bg-2">
+                <img src="assets/top_bg-3.svg" alt="animation" class="top__bg top__bg-3">
+            </div>
+            <div class="top__wrapper">
+                <div>
+                    <img src="assets/icon_big.svg" alt="logo" class="top__logo">
+                </div>
+
+        <!-- * ==== <H1> ==== -->
+                <h1 class="top__headline">Your Headline <br> Here</h1>
+                <h2 class="top__descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit set do eiusmod</h2>
+            </div>
+        </section>
+
+    <!-- * ==== MIDDLE SECTION ==== -->
+        <section class="mid">
+                <h2 class="mid__headline">This is the Section Headline, <br> Continues to Two Lines </h2>
+                <h3 class="mid__descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit set do eiusmod</h3>
+                <div class="mid__column-text">
+                    <p class="mid__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia
+                        deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+                    <p class="mid__text">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <button class="mid__btn">Read more</button>
+        </section>
+
+        <!-- * ==== LEARN MORE ABOUT ==== -->
+        <section class="btm">
+                <h2 class="btm__headline">Learn more <br> about our culture...</h2>
+                <button class="btm__btn">&#9654</button>
+                <h3 class="btm__descr">Duis aute irure dolor in <br> reprehenderit in voluptate velit <br> esse cillum
+                    dolore eu fugiat nulla <br> pariatur.</h3>
+        </section>
+    </main>
+
+    <!-- * ==== FOOTER ==== -->
+    <footer>
+        <div class="ftr">
+            <div class="ftr__top">
+                <img src="assets/icon_small.svg" alt="bottom logo" class="ftr__logo">
+                <span class="ftr__span">Project</span>
+            </div>
+            <div class="ftr__txt">
+                <p>123 Street,<br> Anytown, USA 12345</p>
+                <a href="#" class="ftr__mail">hello@website.com</a>
+            </div>
+            <p class="ftr__date">&#169; 2021 Project. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

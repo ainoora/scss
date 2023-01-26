@@ -1,0 +1,86 @@
+@-webkit-keyframes rotateLogo {
+  0%, 100% {
+    transform: scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotateY(180deg);
+  }
+}
+@keyframes rotateLogo {
+  0%, 100% {
+    transform: scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotateY(180deg);
+  }
+}
+@-webkit-keyframes lumos {
+  10%, 100% {
+    opacity: 0;
+  }
+  65%, 70% {
+    opacity: 1;
+  }
+}
+@keyframes lumos {
+  10%, 100% {
+    opacity: 0;
+  }
+  65%, 70% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pulse {
+  10%, 90% {
+    transform: scale(1);
+    top: 0;
+  }
+  40%, 60% {
+    transform: scale(1.08);
+  }
+}
+@keyframes pulse {
+  10%, 90% {
+    transform: scale(1);
+    top: 0;
+  }
+  40%, 60% {
+    transform: scale(1.08);
+  }
+}
+@-webkit-keyframes inclineBtn {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  30%, 70% {
+    transform: rotate(15deg) translateY(2px);
+  }
+}
+@keyframes inclineBtn {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  30%, 70% {
+    transform: rotate(15deg) translateY(2px);
+  }
+}
+@-webkit-keyframes scaleBtn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40%, 60% {
+    transform: scale(0.8);
+    background: white;
+    color: #39C2D7;
+  }
+}
+@keyframes scaleBtn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40%, 60% {
+    transform: scale(0.8);
+    background: white;
+    color: #39C2D7;
+  }
+}/*# sourceMappingURL=animation.css.map */

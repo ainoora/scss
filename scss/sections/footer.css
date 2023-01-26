@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+footer {
+  background: #464547;
+  padding: 37px 148px 60px 153px;
+}
+
+.ftr {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+}
+.ftr__top {
+  padding-left: 43px;
+}
+.ftr__logo {
+  width: 20px;
+}
+.ftr__span {
+  padding-left: 16px;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.ftr__txt {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.ftr__mail {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 19px;
+}
+.ftr__date {
+  align-self: end;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}/*# sourceMappingURL=footer.css.map */

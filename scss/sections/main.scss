@@ -1,0 +1,188 @@
+@import "variables";
+@import "animation";
+
+section {
+    width: $percentSize;
+    height: $percentSize;
+}
+
+h1 {
+    margin-bottom: 12px;
+    color: $whiteCol;
+    font-size: $fs-h1;
+    font-family: $fOswald;
+    line-height: 64px;
+}
+
+h1, h2 {
+    text-align: $tac-center;
+}
+h2, p {
+    font-family: $fSourceSansPro;
+}
+p {
+    font-size: $fs-p;
+    line-height: 22px;
+}
+
+// * ==== TOP SECTION ====
+
+.top {
+    height: $vh;
+
+    &__bg, &__wrapper {
+        position: absolute;
+        top: 50%;
+        width: $percentSize;
+        transform: translate(0, -50%);
+    }
+
+    &__bg {
+        height:$percentSize;
+        width: $percentSize;
+        transform-origin: center right;
+        object-fit: cover;
+    }
+
+    &__wrapper, &__bg-1, &__bg-2, &__bg-3 {
+        z-index: 1;
+    }
+
+    &__bg-2 {
+        opacity: 0;
+        animation: lumos 5s infinite ease;
+    }
+
+    &__bg-3 {
+        animation: pulse 5s infinite ease;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.4rem;
+        height: $vh;
+        background: transparent;
+    }
+
+    &__wrapper h2 {
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: 24px;
+        color: $greyCol;
+    }
+
+    &__logo:hover {
+        cursor: pointer;
+        animation: rotateLogo 3s linear;
+    }
+}
+
+// * ==== MID SECTION ====
+
+.mid {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 0;
+
+    &__headline {
+        text-align: $tac-center;
+        font-family: $fOswald;
+        font-weight: 700;
+        font-size: $fs-h1;
+        color: #464547;
+    }
+
+    &__descr {
+        text-align: $tac-center;
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: 24px;
+        color: $mid;
+    }
+
+    &__column-text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 14rem;
+    }
+
+    &__text {
+        text-align: left;
+        color: $mid;
+    }
+
+    &__btn {
+        margin-top: 43px;
+        width: 115px;
+        height: 36px;
+        background: #55C2D8;
+        border: none;
+        border-radius: 18px;
+        text-transform: uppercase;
+        font-family: $fOswald;
+        font-size: 14px;
+        text-align: $tac-center;
+        letter-spacing: 0.1em;
+        color: $whiteCol;
+        transition: transform .2s ease;
+    }
+
+    &__btn:hover {
+        animation: inclineBtn 1.5s linear;
+        transform-origin: top left;
+    }
+}
+
+// * ==== LEARN MORE ABOUT ====
+
+.btm {
+    background: url(../assets/btm_bg.png);
+    background-size: $percentSize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+
+    &__headline {
+        font-family: $fOswald;
+        font-weight: 700;
+        font-size: $fs-h1;
+        line-height: 64px;
+        color: $whiteCol;
+    }
+
+    &__descr {
+        text-align: $tac-center;
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $whiteCol;
+        padding-bottom: 20px;
+    }
+
+    &__btn {
+        height: 150px;
+        width: 150px;
+        padding: 8px 0 0 10px;
+        color: $whiteCol;
+        font-size: 75px;
+        border-radius: 100%;
+        background: #39C2D7;
+        border: none;
+    }
+
+    &__btn:hover {
+        animation: scaleBtn 1.2s linear;
+        transform-origin: center center;
+    }
+}

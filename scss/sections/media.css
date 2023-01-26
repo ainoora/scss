@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+  .head {
+    padding: 0 2rem;
+  }
+  .head__toggle-btn {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .top {
+    position: relative;
+    height: 90vh;
+  }
+  .top__bg {
+    top: 40%;
+    right: 0;
+    transform: translate(0, -40%);
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: 100% 100%;
+       object-position: 100% 100%;
+  }
+  .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    background: #EEEEEE;
+  }
+  .mid__column-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+  .btm {
+    background-size: auto;
+  }
+  .btm__btn {
+    height: 100px;
+    padding: 5px 0 0 8px;
+    color: #FFFFFF;
+    font-size: 50px;
+    border-radius: 100px;
+    background: #39C2D7;
+    width: 100px;
+  }
+  footer {
+    padding: 0;
+  }
+  .ftr {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .ftr__top, .ftr__txt, .ftr__date {
+    padding: 10px 0;
+  }
+}/*# sourceMappingURL=media.css.map */

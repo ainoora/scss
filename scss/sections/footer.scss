@@ -1,0 +1,56 @@
+@import "variables";
+
+footer {
+    background: #464547;
+    padding: 37px 148px 60px 153px;
+}
+
+.ftr {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+
+    &__top {
+        padding-left: 43px;
+    }
+
+    &__logo {
+        width: 20px;
+    }
+
+    &__span {
+        padding-left: 16px;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $whiteCol;
+        font-family: $fSourceSansPro;
+    }
+
+    &__txt {
+        color: $ftr;
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: $fs-p;
+        line-height: 19px;
+    }
+
+    &__mail {
+        display: inline-block;
+        color: $ftr;
+        text-decoration: none;
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: $fs-p;
+        line-height: 19px;
+        padding-top: 19px;
+    }
+
+    &__date {
+        align-self: end;
+        color: $ftr;
+        font-family: $fSourceSansPro;
+        font-weight: 400;
+        font-size: $fs-p;
+        line-height: 19px;
+    }
+}
