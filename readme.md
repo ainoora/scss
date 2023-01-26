@@ -1,0 +1,1 @@
+* deploy link: https://ainoora.github.io/scss
