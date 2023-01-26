@@ -1,0 +1,81 @@
+@import "variables";
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        gap: 0;
+        // padding: 2rem 0;
+        width: 100%;
+    }
+
+    .head {
+        padding: 0 2rem;
+
+        &__toggle-btn {
+            display: block;
+        }
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .top {
+        position: relative;
+        height: 90vh;
+
+        &__bg {
+            top: 40%;
+            right: 0;
+            transform: translate(0, -40%);
+            object-fit: none;
+            object-position: 100% 100%;
+        }
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 4rem 0;
+        background: #EEEEEE;
+
+        &__column-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            padding: 0 2rem;
+        }
+    }
+
+    .btm {
+        background-size: auto;
+
+        &__btn {
+            height: 100px;
+            padding: 5px 0 0 8px;
+            color: $whiteCol;
+            font-size: 50px;
+            border-radius: 100px;
+            background: #39C2D7;
+            width: 100px;
+        }
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .ftr {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        padding: 20px 0;
+
+        &__top, &__txt, &__date {
+            padding: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 160px;
+  align-items: center;
+  position: absolute;
+  padding-top: 48px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.head__logo-text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.head__toggle-btn {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 55px;
+}
+.nav-menu__item {
+  list-style-type: none;
+}
+.nav-menu__link--active {
+  border-bottom: 2px solid #FFFFFF;
+}
+.nav-menu__link {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #FFFFFF;
+}/*# sourceMappingURL=header.css.map */
